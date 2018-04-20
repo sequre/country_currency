@@ -12,11 +12,11 @@ country = CountryCurrency.find('ARG')       # Alpha3
 country = CountryCurrency.find('Argentina') # Iso name
 
 # Attributes
-country.currency # => "ARS"
+country.currency        # => "ARS"
 country.currency_symbol # => "$"
-country.alpha2 # => "AR"
-country.alpha3 # => "ARS"
-country.calling # => "+54" phone number prefix
+country.alpha2          # => "AR"
+country.alpha3          # => "ARS"
+country.calling         # => "+54" phone number prefix
 
 # Search by country (United States)
 country = CountryCurrency.find('US')            # Alpha2
@@ -31,3 +31,9 @@ country.alpha3          # => "USA"
 country.calling         # => "+1" phone number prefix
 
 ```
+
+## console:
+`$ rake console`
+
+## test:
+`$ rake test`
