@@ -3,7 +3,7 @@ require 'open-uri'
 require 'erubis'
 require 'yaml'
 
-class IsoCountryCodes
+class CountryCurrency
   module Task
     module UpdateCodes
       def self.get
@@ -71,4 +71,4 @@ class IsoCountryCodes
       end
     end # UpdateCodes
   end # Task
-end # IsoCountryCodes
+end # CountryCurrency

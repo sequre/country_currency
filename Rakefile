@@ -1,5 +1,5 @@
 require 'rake'
-require './lib/iso_country_codes.rb'
+require './lib/country_currency.rb'
 require 'rake/testtask'
 
 Rake::TestTask.new(:test) do |t|
@@ -12,7 +12,7 @@ task :default => :test
 
 desc 'Run a console'
 task :console do
-  require './lib/iso_country_codes'
+  require './lib/country_currency'
   require 'irb'
   ARGV.clear
   IRB.start

@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-class IsoCountryCodes
+class CountryCurrency
   class Code
   <% codes.keys.each do |code| -%>
     class <%= code.upcase %> < Code #:nodoc:
@@ -11,5 +11,5 @@ class IsoCountryCodes
     end
   <% end -%>
   end # end Code
-end # IsoCountryCodes
+end # CountryCurrency
 

@@ -1,4 +1,4 @@
-class IsoCountryCodes
+class CountryCurrency
   class Code
     class GBR < Code #:nodoc:
       self.calling = '+44'
@@ -748,4 +748,4 @@ class IsoCountryCodes
       self.calling = '+245'
     end
   end # end Code
-end # IsoCountryCodes
+end # CountryCurrency

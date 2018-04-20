@@ -1,4 +1,4 @@
-class IsoCountryCodes
+class CountryCurrency
   class Code
     class ALA < Code #:nodoc:
       self.iban = 'FI'
@@ -238,4 +238,4 @@ class IsoCountryCodes
       self.iban = 'FR'
     end
   end # end Code
-end # IsoCountryCodes
+end # CountryCurrency

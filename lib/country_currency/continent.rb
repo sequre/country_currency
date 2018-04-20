@@ -1,6 +1,6 @@
 # Sourced from http://dev.maxmind.com/geoip/legacy/codes/country_continent/
 
-class IsoCountryCodes
+class CountryCurrency
   class Code
     class AND < Code #:nodoc:
       self.continent = 'EU'

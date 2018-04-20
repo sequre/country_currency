@@ -1,6 +1,6 @@
 require 'singleton'
 
-class IsoCountryCodes
+class CountryCurrency
   class Code
     include Singleton
 
@@ -11,6 +11,7 @@ class IsoCountryCodes
     def numeric
       self.class.numeric
     end
+    alias code numeric
 
     def alpha2
       self.class.alpha2
@@ -44,12 +45,12 @@ class IsoCountryCodes
       self.class.currencies
     end
 
-    def iban
-      self.class.iban
-    end
-
     def currency_symbol
       self.class.currency_symbol
+    end
+
+    def iban
+      self.class.iban
     end
 
     class << self
@@ -61,7 +62,7 @@ class IsoCountryCodes
       @@codes = []
       def inherited(code) #:nodoc:
         super
-        @@codes << code.instance if self == IsoCountryCodes::Code
+        @@codes << code.instance if self == CountryCurrency::Code
       end
 
       def all

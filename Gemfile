@@ -1,10 +1,6 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'rake'
-gem 'rdoc'
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-group :development, :test do
-  gem 'nokogiri'
-  gem 'erubis'
-  gem 'test-unit', '~> 3.0'
-end
+# Specify your gem's dependencies in wispro_frontend.gemspec
+gemspec

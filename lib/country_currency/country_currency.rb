@@ -1,4 +1,4 @@
-class IsoCountryCodes # :nodoc:
+class CountryCurrency # :nodoc:
   class UnknownCodeError < StandardError; end
 
   class << self
@@ -18,17 +18,19 @@ class IsoCountryCodes # :nodoc:
       code     = code.to_s.upcase
       instance = nil
 
-      if code.match(/^\d{2}$/)
+      if code.match?(/^\d{2}$/)
         code = "0#{code}" # Make numeric codes three digits
       end
 
-      if code.match(/^\d{3}$/)
-        instance = all.find { |c| c.numeric == code }
-      elsif code.match(/^[A-Z]{2}$/)
-        instance = all.find { |c| c.alpha2 == code }
-      elsif code.match(/^[A-Z]{3}$/)
-        instance = all.find { |c| c.alpha3 == code }
-      end
+      instance = if code.match?(/^\d{3}$/)
+                   all.find { |c| c.numeric == code }
+                 elsif code.match?(/^[A-Z]{2}$/)
+                   all.find { |c| c.alpha2 == code }
+                 elsif code.match?(/^[A-Z]{3}$/)
+                   all.find { |c| c.alpha3 == code }
+                 else
+                   all.find { |c| c.name.casecmp?(code) }
+                 end
 
       return fallback.call "No ISO 3166-1 code could be found for '#{code}'." if instance.nil?
 
