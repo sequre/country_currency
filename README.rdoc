@@ -1,0 +1,5 @@
+= CountryCurrency
+
+== DESCRIPTION:
+
+Provides ISO codes, names and currencies for countries.
