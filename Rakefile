@@ -9,3 +9,11 @@ Rake::TestTask.new(:test) do |t|
 end
 
 task :default => :test
+
+desc 'Run a console'
+task :console do
+  require './lib/iso_country_codes'
+  require 'irb'
+  ARGV.clear
+  IRB.start
+end
