@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    country_currency (0.7.8)
+    country_currency (0.1.0)
       rake (~> 12)
       tzinfo (~> 1)
 
@@ -21,7 +21,7 @@ PLATFORMS
 
 DEPENDENCIES
   country_currency!
-  test-unit
+  test-unit (~> 3.2)
 
 BUNDLED WITH
    1.16.1
