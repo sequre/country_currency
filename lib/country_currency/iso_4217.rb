@@ -1,4 +1,4 @@
-class CountryCurrency
+module CountryCurrency
   class Code
     class ABW < Code #:nodoc:
       self.main_currency = 'AWG'

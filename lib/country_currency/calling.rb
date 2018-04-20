@@ -1,4 +1,4 @@
-class CountryCurrency
+module CountryCurrency
   class Code
     class GBR < Code #:nodoc:
       self.calling = '+44'

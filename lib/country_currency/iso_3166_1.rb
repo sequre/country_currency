@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-class CountryCurrency
+module CountryCurrency
   class Code
     class AFG < Code #:nodoc:
       self.numeric = %q{004}

@@ -1,4 +1,4 @@
-class CountryCurrency # :nodoc:
+module CountryCurrency # :nodoc:
   class UnknownCodeError < StandardError; end
 
   class << self

@@ -1,6 +1,6 @@
 require 'singleton'
 
-class CountryCurrency
+module CountryCurrency
   class Code
     include Singleton
 

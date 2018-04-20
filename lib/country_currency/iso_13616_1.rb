@@ -1,4 +1,4 @@
-class CountryCurrency
+module CountryCurrency
   class Code
     class ALA < Code #:nodoc:
       self.iban = 'FI'
