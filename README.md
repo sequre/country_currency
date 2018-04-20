@@ -1,10 +1,10 @@
-= CountryCurrency
+# CountryCurrency
 
-== DESCRIPTION:
+## DESCRIPTION:
 
 Provides ISO codes, names and currencies for countries.
 
-== USE:
+## USE:
 ```ruby
 # Search by country (Argentina)
 country = CountryCurrency.find('AR')        # Alpha2
