@@ -4,6 +4,8 @@
 
 Provides ISO codes, names and currencies for countries.
 
+## Ruby Version >= 2.4
+
 ## USE:
 ```ruby
 # Search by country (Argentina)

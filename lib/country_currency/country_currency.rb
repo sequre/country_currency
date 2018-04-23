@@ -37,6 +37,19 @@ module CountryCurrency # :nodoc:
       instance
     end
 
+    def find_by_currency(code, &fallback)
+      # Only use for currency data
+      fallback ||= DEFAULT_FALLBACK
+
+      code = code.to_s.upcase
+      instance = all.select { |c| c.currency == code }.first
+
+      return fallback.call "No ISO 3166-1 codes could be found searching with currency '#{code}'." if instance.nil?
+
+      instance
+    end
+
+
     def search_by_name(str, &fallback)
       fallback ||= DEFAULT_FALLBACK
 
