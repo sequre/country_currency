@@ -1,19 +1,19 @@
 PATH
   remote: .
   specs:
-    country_currency (0.1.0)
-      rake (~> 12)
+    country_currency (0.2.0)
+      rake (~> 13.0.1)
       tzinfo (~> 1)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    power_assert (1.1.1)
-    rake (12.3.1)
-    test-unit (3.2.7)
+    power_assert (1.1.6)
+    rake (13.0.1)
+    test-unit (3.3.5)
       power_assert
     thread_safe (0.3.6)
-    tzinfo (1.2.5)
+    tzinfo (1.2.6)
       thread_safe (~> 0.1)
 
 PLATFORMS
@@ -21,7 +21,7 @@ PLATFORMS
 
 DEPENDENCIES
   country_currency!
-  test-unit (~> 3.2)
+  test-unit (~> 3.3.5)
 
 BUNDLED WITH
-   1.16.1
+   2.1.4
