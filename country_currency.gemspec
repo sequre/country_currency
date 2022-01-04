@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.license       = 'MIT'
 
-  s.add_dependency 'rake', '~> 13.0.1'
-  s.add_dependency 'tzinfo', '~> 1'
-  s.add_development_dependency 'test-unit', '~> 3.3.5'
+  s.add_dependency 'rake', '~> 13.0.6'
+  s.add_dependency 'tzinfo', '~> 2.0.4'
+  s.add_development_dependency 'test-unit', '~> 3.5.3'
 end
