@@ -2,26 +2,26 @@ PATH
   remote: .
   specs:
     country_currency (0.2.0)
-      rake (~> 13.0.1)
-      tzinfo (~> 1)
+      rake (~> 13.0.6)
+      tzinfo (~> 2.0.4)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    power_assert (1.1.6)
-    rake (13.0.1)
-    test-unit (3.3.5)
+    concurrent-ruby (1.1.10)
+    power_assert (2.0.1)
+    rake (13.0.6)
+    test-unit (3.5.3)
       power_assert
-    thread_safe (0.3.6)
-    tzinfo (1.2.6)
-      thread_safe (~> 0.1)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   country_currency!
-  test-unit (~> 3.3.5)
+  test-unit (~> 3.5.3)
 
 BUNDLED WITH
    2.1.4
